@@ -24,6 +24,7 @@ header h1 {
 nav {
   display: flex;
   position: sticky;
+  justify-content: space-evenly;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -58,9 +59,11 @@ nav {
 
 li {
   padding-left: 15px;
+  list-style-type: none;
+
 }
 
-ul li::before {
+.ingredientsList li::before {
   content: "- ";
   color: orange;
 }
